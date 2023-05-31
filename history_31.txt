@@ -1,0 +1,60 @@
+   0 ls
+   1 cat readme.txt 
+   2 date
+   3 date +'%H:%M'
+   4 date +'%H:%M_%S'
+   5 date +'%d'
+   6 echo "hello"
+   7 ls
+   8 echo "hello" > file.txt
+   9 ls
+  10 cat file.txt
+  11 cat readme.txt 
+  12 echo "hello" > readme.txt 
+  13 touch bench.py 
+  14 > readme.txt 
+  15 ls -l
+  16 clear
+  17 ls -l
+  18 df
+  19 df -h
+  20 df -h > readme.txt 
+  21 ls -l
+  22 cat readme.txt 
+  23 echo "hello" >> readme.txt
+  24 cat readme.txt 
+  25 >> readme.txt 
+  26  cat file.txt
+  27 cat file.txt >> readme.txt
+  28 date >> readme.txt 
+  29 cat readme.txt 
+  30 df -h
+  31 df -h | wc
+  32 wc --help
+  33 df -h | wc -l
+  34 cat readme.txt 
+  35 cat bench.py | wc
+  36 cat bench.py | wc -c
+  37 clear
+  38 cat /etc/group
+  39 cat /etc/group | wc 
+  40 cat /etc/group | tail
+  41 cat /etc/group | tail -5
+  42 cat /etc/group | head -5
+  43 df -h
+  44 df -h | head -2 |
+  45 df -h | head -2 | tail -3
+  46 df -h | grep 7
+  47 df -h | grep %
+  48 df -h | awk -w /
+  49 df -h | grep % | awk '{print $5}'
+  50 df -h | grep 4.9 | awk '{print $5}'
+  51 df -h | grep 4.9 | awk '{print $5}' | sed 's/%/*/al/'
+  52 df -h | grep 4.9 | awk '{print $5}' | sed 's/%//'
+  53 df -h
+  54 df -h | sed 's/dev/ivan/'
+  55 ls -l /opt/
+  56 ls -l /opt/ >> readme.txt 
+  57 cat readme.txt 
+  58 df -h | grep -o 47
+  59 history > history_31.txt
