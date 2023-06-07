@@ -1,0 +1,27 @@
+   0 vi file.txt
+   1 vi readme.txt 
+   2 tree /opt
+   3 vi /home/text.txt
+   4 vi /home/text.txt 
+   5 ls -la
+   6 nano 
+   7 cat /home/text.txt 
+   8 nano 
+   9 tree /home
+  10 cat /home/text.txt 
+  11 nano /home/text.txt 
+  12 env
+  13 ls -l
+  14 chmod ugo+x bench.py 
+  15 la -l
+  16 ls -l
+  17 chmod g+w bench.py 
+  18 ls - l
+  19 ls -l
+  20 chmod ugo-rwx bench.py 
+  21 ls -l
+  22 chmod u+rw bench.py 
+  23 ls -l
+  24 chmod ugo+r bench.py 
+  25 ls -l
+  26 history >> history_07_06
