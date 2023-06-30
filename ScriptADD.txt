@@ -1,0 +1,22 @@
+Сделать файл скрипта в вашей папке на сервере makescript.sh,который поможет создавать скрипты:
+Спросит путь для создания скрипта “Print path for script:
+“Спросит имя скрипта “Print script name: “
+Запишет в скрипт первую строку  - #!/bin/bash
+Даст нужные права на созданный файл
+Откроет в редакторе nano созданный файл
+- напишет слово DONE как закончит
+
+#!/bin/bash
+ 
+read -p "Print path fo script: " SCRIPT
+read -p "Print script name: " NAME
+ 
+mkdir -p $SCRIPT
+ 
+echo "#!/bin/bash" >> /$SCRIPT/$NAME
+ 
+chmod 744 /$SCRIPT/$NAME
+ 
+/usr/bin/nano /$SCRIPT/$NAME
+ 
+echo "done"
