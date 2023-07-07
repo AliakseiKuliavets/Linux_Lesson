@@ -1,0 +1,19 @@
+Создаем скрипт который проверяет в каждой папке все элементы и выводит 5 самых больших директории
+
+
+
+#/bin/bash
+
+TEST_DIR="/home /var/log"
+DATE='date'
+
+echo "Check date $DATE" >> /opt/090523_morning/Aliaksei_Kuliavets/Result.txt
+for DIR in $TEST_DIR
+do
+echo "Checking dir $DIR" >> /opt/090523_morning/Aliaksei_Kuliavets/Result.txt
+du -Sb $DIR 2>/dev/null |
+ sort -rn |
+ head -5 |
+ cat -n  >>  /opt/090523_morning/Aliaksei_Kuliavets/Result.txt
+done
+echo "Done"
