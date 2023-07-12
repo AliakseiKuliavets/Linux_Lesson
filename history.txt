@@ -1,0 +1,24 @@
+   0 df -h > 1.txt
+   1 ps -ef > 2.txt
+   2 la -la
+   3 ls -la
+   4 cp 1.txt /tmp
+   5 cp 2.txt /tmp
+   6 cd tmp
+   7 cd /tmp/
+   8 ls -la
+   9 tar --help
+  10 tar -czf /opt/123/archive.tar.gz *.txt
+  11 mkdir /opt/123 && tar -czf /opt/archive.tar.gz *.txt
+  12 cd opt/123
+  13 cd /opt/123/
+  14 ls -la
+  15  tar -czf /opt/123/archive.tar.gz *.txt
+  16 ls -la /tmp/
+  17 cd /tmp
+  18  tar -czf /opt/123/archive.tar.gz *.txt
+  19 ls -la /opt/123/
+  20 tar -xjf /opt/123/archive.tar.gz -C /home
+  21 tar -xzf /opt/123/archive.tar.gz -C /home
+  22 tree /home/
+  23 history >> history.txt
