@@ -1,0 +1,14 @@
+Скрипт с аргументами , копировать элементы
+
+#!/bin/bash
+ 
+echo "Arg1= " $1 "Arg2= " $2
+ 
+#FNAME=`basename $1`
+DNAME=`dirname $2`
+mkdir -p $DNAME
+ 
+echo "Copy to" $DNAME
+cp $1 $2
+echo "done"
+ 

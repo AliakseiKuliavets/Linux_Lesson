@@ -1,0 +1,20 @@
+Условие задания:Записать вывод команды df -h, но только первые 3 строки, в файл ВАШЕ_ИМЯ.txt,
+ по пути /opt/test/ВАШЕ_ИМЯЗаписать вывод из файла  /etc/group, но только последние пять строк
+, в файл ВАШЕ_ИМЯ_2.txt, по пути /opt/test/ВАШЕ_ИМЯзаархивировать получившиеся файлы в новый путь 
+/tmp/Разархивировать получившийся архив в новый путь /var/newfolder
+
+
+
+#!/bin/bash
+mkdir -p /opt/test
+df -h | head -n 3 > /opt/test/123.txt
+ 
+tail -n 5 /etc/group > /opt/test/123_2.txt
+ 
+tar -cjf /tmp/archive.tar.bz /opt/test/123.txt /opt/test/123_2.txt
+ 
+ 
+mkdir -p /var/newfolder
+ 
+tar -xjf /tmp/archive.tar.bz -C /var/newfolder
+ 
